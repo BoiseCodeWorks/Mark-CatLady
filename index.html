@@ -15,15 +15,18 @@
     <header class="row">
         <div class="col">
             <h1>Cat Lady's Cat</h1>
+            <button class="btn btn-warning" onclick="setActiveCat(1)">Tom</button>
+            <button class="btn btn-warning" onclick="setActiveCat(0)">Mr. Snibbley</button>
         </div>
     </header>
     <section class="row">
         <div class="col">
             <img src="./assets/fancy-cat.jpg" id="fancy-cat" alt="a cat in a hat">
-            <h4>Mr. Snibbley</h4>
+            <h4 id="name">Mr. Snibbley</h4>
             <h4>Mood: <span id="mood"></span></h4>
             <h4>Pets: <span id="pets">0</span></h4>
-            <button type="button" class="btn btn-info" onclick="pet()">Pet</button>
+            <button type="button" class="btn btn-info" onclick="pet(1)">Pet</button>
+            <button type="button" class="btn btn-danger" onclick="pet(5)">belly-rub</button>
             <button type="button" class="btn btn-success" onclick="reset()">Catnip</button>
         </div>
 
