@@ -11,9 +11,23 @@
     <title>Cat-Lady</title>
 </head>
 
-<body>
+<body class="container-fluid">
+    <header class="row">
+        <div class="col">
+            <h1>Cat Lady's Cat</h1>
+        </div>
+    </header>
+    <section class="row">
+        <div class="col">
+            <img src="./assets/fancy-cat.jpg" id="fancy-cat" alt="a cat in a hat">
+            <h3>Mr. Snibbley</h3>
+            <h4>Mood: <span id="mood"></span></h4>
+            <h4>Pets: <span id="pets">0</span></h4>
+            <button type="button" class="btn btn-info" onclick="pet()">Pet</button>
+        </div>
 
 
+    </section>
     <script src="app/app.js"></script>
 </body>
 
